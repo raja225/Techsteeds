@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>techsteeds</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+<div id="wrapper">
+	<div class="container">
+ 		<header class="clearfix">
+ 			<div class="logo">
+ 				<img src="images/logo.png" alt="Logo"/>
+ 			</div>
+ 			<nav>
+ 				<ul> 
+ 					<li>
+						<div class="dropdown">
+  							<button class="dropbtn">INDUSTRIES</button>
+  							<div class="dropdown-content">
+    							<a href="#">Manufacturing</a>
+    							<a href="#">Service Sector</a>
+    							<a href="#">Customer & Retail</a>
+  							</div>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+  							<button class="dropbtn">SOLUTIONS</button>
+  							<div class="dropdown-content">
+    							<a href="#">Analytics</a>
+    							<a href="#">Big Data</a>
+    							<a href="#">Cloud</a>
+  							</div>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+  							<button class="dropbtn">DISCOVER TGS</button>
+  							<div class="dropdown-content">
+    							<a href="#">About</a>
+    							<a href="#">Relations</a>
+  							</div>
+						</div>
+					</li>
+					<li><a href="#">ABOUT US</a></li>
+ 					<li><a href="#">INSIGHTS</a></li>
+ 					<li><a href="#">CONTACT US</a></li>
+ 				</ul>
+ 			</nav>
+		</header>
+			<div class="section">
+ 				<div class="w3-content w3-display-container" style="height:500px">
+  					<img class="mySlides" src="images/img1.jpg" style="width:100%;height:80%"/>
+  					<img class="mySlides" src="images/img2.jpg" style="width:100%;height:80%"/>
+  					<img class="mySlides" src="images/img3.png" style="width:100%;height:80%"/>
+  					<img class="mySlides" src="images/img4.jpg" style="width:100%;height:80%"/>
+
+  					<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  					<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+				</div>
+
+					<script>
+						var slideIndex = 1;
+						showDivs(slideIndex);
+
+						function plusDivs(n) {
+ 						showDivs(slideIndex += n);
+						}
+
+							function showDivs(n) {
+  							var i;
+  							var x = document.getElementsByClassName("mySlides");
+ 							if (n > x.length) {slideIndex = 1}
+  							if (n < 1) {slideIndex = x.length}
+  							for (i = 0; i < x.length; i++) {
+    							x[i].style.display = "none";  
+  								}
+  								x[slideIndex-1].style.display = "block";  
+									}
+					</script>
+			</div>
+				<div class="container">
+					<div class="text clearfix">
+						<div class="alignleft">
+							<h1>About us</h1>
+								<p id="p">Assurance of quality work as we have the team of talented professionals who carry years of experience in field of Salesforce, DOT NET Programming, Java, SAP or other related programming languages.</p>
+							<h2>Our Mission</h2>
+								<ul style="padding:10px 10px;text-align:justify">
+									<li><p>To be one of the leading company in delivering enterprise business management solutions</p></li>
+									<li><p>To focus on providing solutions that enable our customers to reduce time and complexity in managing the work.</p></li>
+									<li><p>To deliver the best and most cost-effective solutions to our clients</p></li>
+									<li><p>Passion for quality, dedication to innovation, commitment to excel</p></li>
+									<li><p>To Create Software’s that transform complex work into simple form and automate the process.</p></li>
+								</ul>
+						</div>
+						<div class="alignright">
+							<img src="images/img5.jpg" style="width:100%;height:416px;padding-top:20px
+							"/>
+						</div>
+	
+					</div>
+				</div>
+<div class="modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2>Enter Your Details</h2>
+      <a href="#" class="btn-close closemodal" aria-hidden="true">&times;</a>
+    </div>
+    <div class="modal-body">
+      <!--<input type="text" name="user" placeholder="Username" size="20" /><br>
+      <input type="text" name="pass" placeholder="Password" size="20" /><br>-->
+      <input type="text" name="student" placeholder="name" size="20" required/><br>
+      <input type="text" name="student" placeholder="age" size="20" required/><br>
+      <input type="text" name="student" placeholder="branch" size="20" required/><br>
+      <input type="tel" name="student" placeholder="phone number" size="20" required/><br>
+      <input type="text" name="student" placeholder="address" size="20" required/><br>
+
+    </div>
+    <div class="modal-footer">
+    <input type="submit"/>
+      <!--<a href="#" class="btn">Login</a>-->
+    </div>
+  </div>
+</div>
+ 
+  <h1>Student details</h1>
+  <p><a href="#" class="btn btn-big openmodal">Open</a></p>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ 
+    <script  src="js/function.js"></script>
+
+					<footer>
+						<div class="row">
+							<div class="col-sm-4">
+								<form class="f1">
+  									First name:<br>
+  									<input type="text" name="firstname">
+  									<br>
+  									Last name:<br>
+  									<input type="text" name="lastname">
+  									<br><br>
+  									<input type="submit" value="Submit">
+								</form>
+							</div>
+							<div class="col-sm-4">
+								<h1>text</h1>
+							</div>
+							<div class="col-sm-4">
+								<h2>text</h2>
+							</div>
+
+
+							
+						</div>
+					</footer>
+	</div>
+</div>
+</body>
+</html>
